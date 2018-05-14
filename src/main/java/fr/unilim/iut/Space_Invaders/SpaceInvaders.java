@@ -81,6 +81,12 @@ public class SpaceInvaders {
         return marque;
 	}
     
-    
+	public void deplacerVaisseauVersLaDroite() {
+		if (vaisseau.abscisseLaPlusADroite() < (longueur - 1))
+			vaisseau.seDeplacerVersLaADroite();
+	}
+	 public void deplacerVaisseauVersLaGauche() {
+		   vaisseau.seDeplacerVersLaGauche();
+	    }
 
 }
