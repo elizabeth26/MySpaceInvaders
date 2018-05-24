@@ -67,9 +67,75 @@ public class TestSpaceInvaders {
 				fail("Dépassement du vaisseau vers le haut en raison de sa hauteur trop importante : devrait déclencher une exception DebordementEspaceJeuException");
 			} catch (final DebordementEspaceJeuException e) {
 			}
-			
-				
 		}
-	    	   
-	   
+	    @Test
+	    public void test_VaisseauAvance_DeplacerVaisseauVersLaDroite() {
+			
+			spaceinvaders.positionnerUnNouveauVaisseau(3,2,7,9);
+			spaceinvaders.deplacerVaisseauVersLaDroite();
+			assertEquals("" + 
+			"...............\n" + 
+			"...............\n" +
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"........VVV....\n" + 
+			"........VVV....\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+		}	   
+	    @Test
+		public void test_VaisseauAvecDimensionImmobile_DeplacerVaisseauVersLaDroite() {
+			
+			spaceinvaders.positionnerUnNouveauVaisseau(3,2,12,9);
+			spaceinvaders.deplacerVaisseauVersLaDroite();
+			assertEquals("" + 
+			"...............\n" + 
+			"...............\n" +
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"............VVV\n" + 
+			"............VVV\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+		} 
+	    @Test
+		public void test_VaisseauAvecDimensionAvance_DeplacerVaisseauVersLaGauche() {
+			
+			spaceinvaders.positionnerUnNouveauVaisseau(3,2,7,9);
+			spaceinvaders.deplacerVaisseauVersLaGauche();
+		
+			assertEquals("" + 
+			"...............\n" + 
+			"...............\n" +
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"......VVV......\n" + 
+			"......VVV......\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+	    }
+	    @Test
+		public void test_VaisseauAvecDimensionImmobile_DeplacerVaisseauVersLaGauche() {
+			
+			spaceinvaders.positionnerUnNouveauVaisseau(3,2,0,9);
+			spaceinvaders.deplacerVaisseauVersLaGauche();
+			
+			assertEquals("" + 
+			"...............\n" + 
+			"...............\n" +
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"...............\n" + 
+			"VV.............\n" + 
+			"VV.............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+		}
 }
