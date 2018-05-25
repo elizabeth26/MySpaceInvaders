@@ -130,13 +130,15 @@ public class SpaceInvaders implements Jeu {
 
 	@Override
 	public void evoluer(Commande commandeUser) {
-		// TODO Auto-generated method stub
-		
+		if (commandeUser.droite)
+			this.deplacerVaisseauVersLaDroite();
+		if(commandeUser.gauche)
+			this.deplacerVaisseauVersLaGauche();
 	}
 
 	@Override
 	public boolean etreFini() {
-		// TODO Auto-generated method stub
+		// pas de fin pour l instant 
 		return false;
 	}
 
