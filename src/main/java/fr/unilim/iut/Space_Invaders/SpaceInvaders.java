@@ -1,8 +1,12 @@
 package fr.unilim.iut.Space_Invaders;
 import fr.unilim.iut.outils.DebordementEspaceJeuException;
+import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
+import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import outils.HorsEspaceJeuException;
 import outils.Constante;
-public class SpaceInvaders {
+
+
+public class SpaceInvaders implements Jeu {
 
 	
 	int longueur;
@@ -122,6 +126,18 @@ public class SpaceInvaders {
 		if (!estDansEspaceJeu(vaisseau.abscisseLaPlusAGauche(), vaisseau.ordonneeLaPlusHaute())) {
 			vaisseau.positionner(0, vaisseau.ordonneeLaPlusHaute());
 		}
+	}
+
+	@Override
+	public void evoluer(Commande commandeUser) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean etreFini() {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 }
