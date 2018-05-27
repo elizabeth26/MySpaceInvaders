@@ -63,7 +63,7 @@ public class SpaceInvaders implements Jeu {
 		return this.aUnVaisseau() && vaisseau.occupeLaPosition(x, y);
 	}
 
-	private boolean aUnVaisseau() {
+	public boolean aUnVaisseau() {
 		return vaisseau!=null;
 	}
 
@@ -141,5 +141,11 @@ public class SpaceInvaders implements Jeu {
 		// pas de fin pour l instant 
 		return false;
 	}
+
+	public Vaisseau recupererVaisseau() {		
+		return this.vaisseau;
+	}
+	
+
 
 }

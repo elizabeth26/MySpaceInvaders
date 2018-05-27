@@ -74,4 +74,9 @@ public int longueur() {
 	return this.dimension.longueur();
 }
 
+public int hauteur() {
+	
+	return this.dimension.hauteur();
+}
+
 }
