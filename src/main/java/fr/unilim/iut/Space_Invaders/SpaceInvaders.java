@@ -132,6 +132,22 @@ public class SpaceInvaders implements Jeu {
 	}
 
     public void tirerUnMissile(Dimension dimension, int vitesse) {
+		int x = position.abscisse();
+		int y = position.ordonnee();
+		
+		if (!estDansEspaceJeu(x, y))
+			throw new HorsEspaceJeuException("La position du vaisseau est en dehors de l'espace jeu");
+
+		int longueurVaisseau = dimension.longueur();
+		int hauteurVaisseau = dimension.hauteur();
+		
+		if (!estDansEspaceJeu(x, y))
+			throw new HorsEspaceJeuException("La position du vaisseau est en dehors de l'espace jeu");
+		if ( !estDansEspaceJeu(x+longueur-1,y))
+			throw new DebordementEspaceJeuException("Le vaisseau déborde de l'espace jeu vers la droite à cause de sa longueur");
+		if (!estDansEspaceJeu(x,y-hauteur+1))
+			throw new DebordementEspaceJeuException("Le vaisseau déborde de l'espace jeu vers le bas à cause de sa hauteur");
+		vaisseau = new Vaisseau(new Dimension(longueur, hauteur), new Position(x, y) );
 		this.missile = this.vaisseau.tirerUnMissile(dimension,vitesse);
 	}
     
