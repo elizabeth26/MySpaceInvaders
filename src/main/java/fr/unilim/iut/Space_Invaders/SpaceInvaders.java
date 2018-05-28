@@ -1,5 +1,5 @@
 package fr.unilim.iut.Space_Invaders;
-import fr.unilim.iut.outils.DebordementEspaceJeuException;
+import outils.DebordementEspaceJeuException;
 import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
 import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import outils.HorsEspaceJeuException;

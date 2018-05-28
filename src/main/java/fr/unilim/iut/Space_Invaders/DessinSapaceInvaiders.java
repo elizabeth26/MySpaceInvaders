@@ -1,5 +1,5 @@
 package fr.unilim.iut.Space_Invaders;
-
+import fr.unilim.iut.outils.*;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;

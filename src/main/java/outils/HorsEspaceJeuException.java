@@ -5,5 +5,4 @@ package outils;
 		    public HorsEspaceJeuException(String message) {
 			    super(message);
 		    }
-
 }

@@ -1,6 +1,7 @@
 import fr.unilim.iut.Space_Invaders.DessinSapaceInvaiders;
 import fr.unilim.iut.Space_Invaders.SpaceInvaders;
 import fr.unilim.iut.spaceinvaders.moteurjeu.MoteurGraphique;
+import fr.unilim.iut.outils.DebordementEspaceJeuException;
 import outils.Constante;
 
 public class main {
