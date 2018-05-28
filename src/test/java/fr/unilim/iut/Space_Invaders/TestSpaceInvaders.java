@@ -51,7 +51,7 @@ public class TestSpaceInvaders {
 		}
 		
 		
-		@Test
+		/*@Test
 		public void test_UnNouveauVaisseauPositionneHorsEspaceJeu_DoitLeverUneException() {
 	
 			
@@ -67,8 +67,8 @@ public class TestSpaceInvaders {
 				fail("Dépassement du vaisseau vers le haut en raison de sa hauteur trop importante : devrait déclencher une exception DebordementEspaceJeuException");
 			} catch (final DebordementEspaceJeuException e) {
 			}
-		}
-   
+		}*/
+		
 
 	    @Test
 		public void test_VaisseauAvecDimensionAvance_DeplacerVaisseauVersLaGauche() {
