@@ -31,6 +31,16 @@ public class SpaceInvaders implements Jeu {
 		return espaceDeJeu.toString();
 	}
 
+	public void initialiserJeu() {
+		Position positionVaisseau = new Position(this.longueur / 2, this.hauteur - 1);
+		Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
+		positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
+
+		Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
+		Position positionEnvahisseur = new Position(this.longueur / 2, dimensionEnvahisseur.hauteur() - 1);
+		positionnerUnNouvelEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
+	}
+	
 	private char recupererMarqueDeLaPosition(int x, int y) {
 		char marque;
 		if (this.aUnVaisseauQuiOccupeLaPosition(y, x))
@@ -123,20 +133,7 @@ public class SpaceInvaders implements Jeu {
 		}
 
 	}
-
-	public boolean etreFini() {
-		return false;
-	}
-
-	public void initialiserJeu() {
-		Position positionVaisseau = new Position(this.longueur / 2, this.hauteur - 1);
-		Dimension dimensionVaisseau = new Dimension(Constante.VAISSEAU_LONGUEUR, Constante.VAISSEAU_HAUTEUR);
-		positionnerUnNouveauVaisseau(dimensionVaisseau, positionVaisseau, Constante.VAISSEAU_VITESSE);
-
-		Dimension dimensionEnvahisseur = new Dimension(Constante.ENVAHISSEUR_LONGUEUR, Constante.ENVAHISSEUR_HAUTEUR);
-		Position positionEnvahisseur = new Position(this.longueur / 2, dimensionEnvahisseur.hauteur() - 1);
-		positionnerUnNouvelEnvahisseur(dimensionEnvahisseur, positionEnvahisseur, Constante.ENVAHISSEUR_VITESSE);
-	}
+	
 
 	public Vaisseau recupererVaisseau() {
 		return this.vaisseau;
@@ -244,5 +241,13 @@ public class SpaceInvaders implements Jeu {
 	public Envahisseur recupererEnvahisseur() {
 		return this.envahisseur;
 	}
+	public boolean collisiondeuxSprite() {
+		return Collision.detecterCollision(this.missile, this.envahisseur);
+	}
+	
+	public boolean etreFini() {
+		return Collision.detecterCollision(this.missile, this.envahisseur);
+	}
 
+	
 }

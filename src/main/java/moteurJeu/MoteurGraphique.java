@@ -12,7 +12,6 @@ import moteurJeu.InterfaceGraphique;
  */
 
 public class MoteurGraphique {
-
 	/**
 	 * le jeu a executer
 	 */
@@ -62,6 +61,9 @@ public class MoteurGraphique {
 			// met en attente
 			Thread.sleep(100);
 		}
+		
+		if(this.jeu.etreFini()){
+			
+		}
 	}
-
 }
