@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
   realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="fr.unilim.iut.Space_Invaders.SpaceInvaders" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/Space_Invaders/SpaceInvaders.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="1" language="java" name="model.SpaceInvaders" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/model/SpaceInvaders.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="816" y="192"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -11,9 +10,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="fr.unilim.iut.Space_Invaders.Vaisseau" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/Space_Invaders/Vaisseau.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="2" language="java" name="model.Vaisseau" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/model/Vaisseau.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1169" y="195"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -21,9 +19,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="fr.unilim.iut.Space_Invaders.Dimension" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/Space_Invaders/Dimension.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="3" language="java" name="model.Dimension" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/model/Dimension.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1239" y="607"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -31,9 +28,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="fr.unilim.iut.Space_Invaders.Position" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/Space_Invaders/Position.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="4" language="java" name="model.Position" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/model/Position.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1086" y="614"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -41,9 +37,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="5" language="java" name="fr.unilim.iut.Space_Invaders.DessinSapaceInvaiders" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/Space_Invaders/DessinSapaceInvaiders.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="5" language="java" name="model.DessinSapaceInvaiders" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/model/DessinSapaceInvaiders.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="822" y="474"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -51,9 +46,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="6" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.Commande" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/Commande.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="6" language="java" name="moteurJeu.Commande" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/Commande.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="674" y="658"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -61,9 +55,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="7" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.Controleur" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/Controleur.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="7" language="java" name="moteurJeu.Controleur" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/Controleur.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="351" y="642"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -71,9 +64,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="8" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.DessinJeu" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/DessinJeu.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <interface id="8" language="java" name="moteurJeu.DessinJeu" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/DessinJeu.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="203" y="195"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -81,10 +73,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="9" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.InterfaceGraphique" 
-    project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/InterfaceGraphique.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="9" language="java" name="moteurJeu.InterfaceGraphique" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/InterfaceGraphique.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="707" y="821"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -92,9 +82,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="10" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.Jeu" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/Jeu.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <interface id="10" language="java" name="moteurJeu.Jeu" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/Jeu.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="452" y="147"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -102,9 +91,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="11" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.MoteurGraphique" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/MoteurGraphique.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="11" language="java" name="moteurJeu.MoteurGraphique" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/MoteurGraphique.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="151" y="749"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -112,9 +100,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="fr.unilim.iut.spaceinvaders.moteurjeu.PanelDessin" project="MySpaceInvaders" 
-    file="/MySpaceInvaders/src/main/java/fr/unilim/iut/spaceinvaders/moteurjeu/PanelDessin.java" binary="false" 
-    corner="BOTTOM_RIGHT">    
+  <class id="12" language="java" name="moteurJeu.PanelDessin" project="MySpaceInvaders" 
+    file="/MySpaceInvaders/src/main/java/moteurJeu/PanelDessin.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="905" y="656"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -123,119 +110,131 @@
     </display>  
   </class>  
   <association id="13">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="14" name="origine">        
-        <position height="0" width="0" x="227" y="80"/>      
+    <end type="SOURCE" refId="9" navigable="false">      
+      <attribute id="14" name="panel">        
+        <position height="0" width="0" x="0" y="0"/>      
       </attribute>      
       <multiplicity id="15" minimum="0" maximum="1">        
-        <position height="0" width="0" x="227" y="80"/>      
+        <position height="0" width="0" x="0" y="0"/>      
       </multiplicity>    
     </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
+    <end type="TARGET" refId="12" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="16">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="17" name="dessin"/>      
-      <multiplicity id="18" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="19">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="20" name="dessin"/>      
-      <multiplicity id="21" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="22">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="23" name="commandeARetourner"/>      
-      <multiplicity id="24" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="25">    
+  <realization id="16">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="8"/>  
+  </realization>  
+  <association id="17">    
     <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="26" name="controleur"/>      
-      <multiplicity id="27" minimum="0" maximum="1"/>    
+      <attribute id="18" name="controleur">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="28">    
+  <realization id="20">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="10"/>  
+  </realization>  
+  <association id="21">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="22" name="commandeARetourner">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="23" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="24">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="25" name="gui">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="26" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="27">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="28" name="jeu">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="29" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="30">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="29" name="vaisseau">        
+      <attribute id="31" name="vaisseau">        
         <position height="0" width="0" x="195" y="-26"/>      
       </attribute>      
-      <multiplicity id="30" minimum="0" maximum="1">        
+      <multiplicity id="32" minimum="0" maximum="1">        
         <position height="0" width="0" x="195" y="-26"/>      
       </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="31">    
-    <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="32" name="dimension">        
-        <position height="0" width="0" x="162" y="100"/>      
-      </attribute>      
-      <multiplicity id="33" minimum="0" maximum="1">        
-        <position height="0" width="0" x="162" y="100"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="34">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="10"/>  
-  </realization>  
-  <association id="35">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="36" name="jeu"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="39" name="commandeEnCours"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="6" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="9" navigable="false">      
-      <attribute id="42" name="panel"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="44">    
-    <end type="SOURCE" refId="5"/>    
-    <end type="TARGET" refId="8"/>  
-  </realization>  
-  <association id="45">    
+  <association id="33">    
     <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="46" name="jeu"/>      
-      <multiplicity id="47" minimum="0" maximum="1"/>    
+      <attribute id="34" name="jeu">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="35" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="48">    
+  <association id="36">    
     <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="49" name="gui"/>      
-      <multiplicity id="50" minimum="0" maximum="1"/>    
+      <attribute id="37" name="dessin">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="38" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="39">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="40" name="dessin">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="41" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="42">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="43" name="commandeEnCours">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="44" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="6" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

@@ -1,10 +1,10 @@
-package fr.unilim.iut.Space_Invaders;
+package model;
 import fr.unilim.iut.outils.*;
+import moteurJeu.DessinJeu;
+
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-
-import fr.unilim.iut.spaceinvaders.moteurjeu.DessinJeu;
 
 public class DessinSapaceInvaiders implements DessinJeu {
 	   private SpaceInvaders jeu;

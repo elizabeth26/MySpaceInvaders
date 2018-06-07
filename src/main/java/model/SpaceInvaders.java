@@ -1,9 +1,9 @@
-package fr.unilim.iut.Space_Invaders;
+package model;
 import outils.DebordementEspaceJeuException;
-import fr.unilim.iut.spaceinvaders.moteurjeu.Commande;
-import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import outils.HorsEspaceJeuException;
 import outils.MissileException;
+import moteurJeu.Commande;
+import moteurJeu.Jeu;
 import outils.Constante;
 
 

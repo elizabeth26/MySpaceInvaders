@@ -1,10 +1,10 @@
-import fr.unilim.iut.Space_Invaders.DessinSapaceInvaiders;
-import fr.unilim.iut.Space_Invaders.SpaceInvaders;
-import fr.unilim.iut.spaceinvaders.moteurjeu.MoteurGraphique;
-import fr.unilim.iut.outils.DebordementEspaceJeuException;
+package moteurJeu;
+
+import model.DessinSapaceInvaiders;
+import model.SpaceInvaders;
 import outils.Constante;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args){
 	

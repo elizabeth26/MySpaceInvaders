@@ -7,6 +7,9 @@ import org.junit.Before;
 import org.junit.Test;
 
 import fr.unilim.iut.outils.DebordementEspaceJeuException;
+import model.Dimension;
+import model.Position;
+import model.SpaceInvaders;
 import outils.HorsEspaceJeuException;
 
 public class TestSpaceInvaders {

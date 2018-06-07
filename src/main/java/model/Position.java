@@ -1,4 +1,4 @@
-package fr.unilim.iut.Space_Invaders;
+package model;
 
 public class Position {
 	   int x;

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.2" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="fr.unilim.iut.Space_Invaders.SpaceInvaders" project="Space-Invaders" 
+  <class id="1" language="java" name="model.SpaceInvaders" project="Space-Invaders" 
     file="/Space-Invaders/src/main/java/fr/unilim/iut/Space_Invaders/SpaceInvaders.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="215" y="229"/>    
@@ -11,7 +11,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="fr.unilim.iut.Space_Invaders.Vaisseau" project="Space-Invaders" 
+  <class id="2" language="java" name="model.Vaisseau" project="Space-Invaders" 
     file="/Space-Invaders/src/main/java/fr/unilim/iut/Space_Invaders/Vaisseau.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="695" y="229"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
