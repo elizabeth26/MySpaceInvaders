@@ -4,18 +4,14 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 
+import fr.unilim.iut.Space_Invaders.SpaceInvaders;
 import outils.MissileException;
 
 import org.junit.Test;
 
-import model.Dimension;
-import model.Position;
-import model.SpaceInvaders;
-import model.Vaisseau;
-
 public class VaisseauTest {
 	
-	 private SpaceInvaders spaceinvaders; 
+	 private SpaceInvaders spaceinvaders;
 
 	    @Before
 	    public void initialisation() {
