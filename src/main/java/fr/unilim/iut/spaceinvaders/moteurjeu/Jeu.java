@@ -1,5 +1,7 @@
 package fr.unilim.iut.spaceinvaders.moteurjeu;
 
+import moteurJeu.Commande;
+
 /**
  * represente un jeu un jeu est caracterise par la methode evoluer a redefinir
  * 
@@ -20,4 +22,5 @@ public interface Jeu {
 	 * @return true si et seulement si le jeu est fini
 	 */
 	public boolean etreFini();
+
 }

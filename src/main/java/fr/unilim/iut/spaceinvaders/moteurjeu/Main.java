@@ -1,7 +1,8 @@
-package moteurJeu;
+package fr.unilim.iut.spaceinvaders.moteurjeu;
 
 import model.DessinSapaceInvaiders;
 import model.SpaceInvaders;
+import moteurJeu.MoteurGraphique;
 import outils.Constante;
 
 public class Main {

@@ -13,7 +13,7 @@ public class SpaceInvaders implements Jeu {
 	int longueur;
     int hauteur;
    
-    private Vaisseau vaisseau;
+    private Vaisseau vaisseau; 
 	private Missile missile;
     
     public SpaceInvaders(int longueur, int hauteur) {
@@ -114,7 +114,6 @@ public class SpaceInvaders implements Jeu {
 		}
 	}
 
-	@Override
 	public void evoluer(Commande commandeUser) {
 		if (commandeUser.droite)
 			this.deplacerVaisseauVersLaDroite();
@@ -177,6 +176,12 @@ public class SpaceInvaders implements Jeu {
 				this.missile = null;
 			}
 		}
+	}
+
+	@Override
+	public void evoluer(moteurJeu.Commande commandeUser) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
