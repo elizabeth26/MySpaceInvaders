@@ -181,8 +181,11 @@ public class SpaceInvaders implements Jeu {
 
 	public boolean envahisseurSeDeplaceVersLaDroite() {
 		if (this.envahisseurEstAGauche()) {
+			this.envahisseur.origine.y=this.envahisseur.origine.y+20;
 			this.deplacementEnvahisseurVersLaDroite = true;
+			
 		} else if (this.envahisseurEstADroite()) {
+			this.envahisseur.origine.y=this.envahisseur.origine.y+20;
 			this.deplacementEnvahisseurVersLaDroite = false;
 		}
 
