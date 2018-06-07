@@ -1,9 +1,9 @@
 package moteurJeu;
 
-import model.DessinSapaceInvaiders;
+import model.Constante;
+import model.DessinSpaceInvaders;
 import model.SpaceInvaders;
 import moteurJeu.MoteurGraphique;
-import outils.Constante;
 
 public class Main {
 
@@ -11,7 +11,7 @@ public class Main {
 	
 		SpaceInvaders jeu = new SpaceInvaders(Constante.ESPACEJEU_LONGUEUR, Constante.ESPACEJEU_HAUTEUR);
 	    jeu.initialiserJeu();
-	    DessinSapaceInvaiders afficheur = new DessinSapaceInvaiders(jeu);
+	    DessinSpaceInvaders afficheur = new DessinSpaceInvaders(jeu);
 
 	    MoteurGraphique moteur = new MoteurGraphique(jeu, afficheur);
 		try {
