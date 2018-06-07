@@ -2,8 +2,8 @@ package model;
 import outils.DebordementEspaceJeuException;
 import outils.HorsEspaceJeuException;
 import outils.MissileException;
-import fr.unilim.iut.spaceinvaders.moteurjeu.Jeu;
 import moteurJeu.Commande;
+import moteurJeu.Jeu;
 import outils.Constante;
 
 
@@ -13,7 +13,7 @@ public class SpaceInvaders implements Jeu {
 	int longueur;
     int hauteur;
    
-    private Vaisseau vaisseau;
+    private Vaisseau vaisseau; 
 	private Missile missile;
     
     public SpaceInvaders(int longueur, int hauteur) {
@@ -100,7 +100,7 @@ public class SpaceInvaders implements Jeu {
     
 	public void deplacerVaisseauVersLaDroite() {
 		if (vaisseau.abscisseLaPlusADroite() < (longueur - 1)) {
-			vaisseau.seDeplacerVersLaDroite();
+			vaisseau.deplacerHorizontalementVers(Direction.DROITE);
 			if (!estDansEspaceJeu(vaisseau.abscisseLaPlusADroite(), vaisseau.ordonneeLaPlusHaute())) {
 				vaisseau.positionner(longueur - vaisseau.longueur(), vaisseau.ordonneeLaPlusHaute());
 			}
@@ -108,7 +108,7 @@ public class SpaceInvaders implements Jeu {
 	}
 	public void deplacerVaisseauVersLaGauche() {
 		if (0 < vaisseau.abscisseLaPlusAGauche())
-			vaisseau.seDeplacerVersLaGauche();
+			vaisseau.deplacerHorizontalementVers(Direction.GAUCHE);
 		if (!estDansEspaceJeu(vaisseau.abscisseLaPlusAGauche(), vaisseau.ordonneeLaPlusHaute())) {
 			vaisseau.positionner(0, vaisseau.ordonneeLaPlusHaute());
 		}
@@ -120,6 +120,17 @@ public class SpaceInvaders implements Jeu {
 			this.deplacerVaisseauVersLaDroite();
 		if(commandeUser.gauche)
 			this.deplacerVaisseauVersLaGauche();
+	    if (commandeUser.tir && !this.aUnMissile())
+	       tirerUnMissile(new Dimension(Constante.MISSILE_LONGUEUR, Constante.MISSILE_HAUTEUR),Constante.MISSILE_VITESSE);
+		if (this.aUnMissile()) {
+				this.deplacerMissile();
+			}
+	}
+	public Missile recupererMissile() {
+		return this.missile;
+	}
+	public boolean aUnMissile() {
+		return missile != null;
 	}
 
 	@Override
@@ -158,5 +169,16 @@ public class SpaceInvaders implements Jeu {
 		else 
 			return false;
 	}
+
+	public void deplacerMissile() {
+		if (this.aUnMissile()) {
+			this.missile.deplacerVerticalementVers(Direction.HAUT_ECRAN);
+			if (!estDansEspaceJeu(this.missile.abscisseLaPlusADroite(), this.missile.ordonneeLaPlusBasse())) {
+				this.missile = null;
+			}
+		}
+	}
+
+	
 
 }
