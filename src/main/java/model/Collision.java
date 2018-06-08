@@ -3,41 +3,43 @@ package model;
 public class Collision {
 
 
-	public static boolean detecterCollision(Sprite sprite1, Sprite sprite2) {
-		if(sprite1 == null || sprite2 == null) {
+	public static boolean detecterCollision(Sprite sprt1, Sprite sprt2) {
+		if(sprt1 == null || sprt2 == null) {
 			return false;
 		}
-		return MissileEtEnvahisseurOntUnPointEnAbscisseEnCommun(sprite1, sprite2)
-				&& MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(sprite1, sprite2);
+		return MissileEtEnvahisseurOntUnPointEnAbscisseEnCommun(sprt1, sprt2)
+				&& MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(sprt1, sprt2);
+	} 
+
+	public static boolean MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(Sprite sprt1, Sprite sprt2) {
+		return ordonneeLaPlusBasseDesprt1EstDansOrdonneessprt2(sprt2, sprt1)
+				|| ordonneeLaPlusHauteDesprt1EstDansOrdonneessprt2(sprt2, sprt1);
 	}
 
-	public static boolean MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(Sprite sprite1, Sprite sprite2) {
-		return ordonneeLaPlusBasseDeSprite1EstDansOrdonneesSprite2(sprite2, sprite1)
-				|| ordonneeLaPlusHauteDeSprite1EstDansOrdonneesSprite2(sprite2, sprite1);
+	public static boolean MissileEtEnvahisseurOntUnPointEnAbscisseEnCommun(Sprite sprt1, Sprite sprt2) {
+		return abscisseAGaucheDesprt1EstDansLesAbscissessprt2(sprt1, sprt2)
+				|| abscisseADroiteDesprt1EstDansLesAbscissessprt2(sprt1, sprt2);
 	}
 
-	public static boolean MissileEtEnvahisseurOntUnPointEnAbscisseEnCommun(Sprite sprite1, Sprite sprite2) {
-		return abscisseAGaucheDeSprite1EstDansLesAbscissesSprite2(sprite1, sprite2)
-				|| abscisseADroiteDeSprite1EstDansLesAbscissesSprite2(sprite1, sprite2);
+	public static boolean ordonneeLaPlusHauteDesprt1EstDansOrdonneessprt2(Sprite sprt1, Sprite sprt2) {
+		return sprt1.ordonneeLaPlusHaute() >= sprt2.ordonneeLaPlusBasse()
+				&& sprt1.ordonneeLaPlusHaute() <= sprt2.ordonneeLaPlusHaute();
 	}
 
-	public static boolean ordonneeLaPlusHauteDeSprite1EstDansOrdonneesSprite2(Sprite sprite1, Sprite sprite2) {
-		return sprite1.ordonneeLaPlusHaute() >= sprite2.ordonneeLaPlusBasse()
-				&& sprite1.ordonneeLaPlusHaute() <= sprite2.ordonneeLaPlusHaute();
+	public static boolean ordonneeLaPlusBasseDesprt1EstDansOrdonneessprt2(Sprite sprt1, Sprite sprt2) {
+		return sprt1.ordonneeLaPlusBasse() >= sprt2.ordonneeLaPlusBasse()
+				&& sprt1.ordonneeLaPlusBasse() <= sprt2.ordonneeLaPlusHaute();
 	}
 
-	public static boolean ordonneeLaPlusBasseDeSprite1EstDansOrdonneesSprite2(Sprite sprite1, Sprite sprite2) {
-		return sprite1.ordonneeLaPlusBasse() >= sprite2.ordonneeLaPlusBasse()
-				&& sprite1.ordonneeLaPlusBasse() <= sprite2.ordonneeLaPlusHaute();
-	}
-
-	public static boolean abscisseADroiteDeSprite1EstDansLesAbscissesSprite2(Sprite sprite1, Sprite sprite2) {
-		return sprite1.abscisseLaPlusADroite() >= sprite2.abscisseLaPlusAGauche() &&
-				sprite1.abscisseLaPlusADroite() <= sprite2.abscisseLaPlusADroite();
+	public static boolean abscisseADroiteDesprt1EstDansLesAbscissessprt2(Sprite sprt1, Sprite sprt2) {
+		return sprt1.abscisseLaPlusADroite() >= sprt2.abscisseLaPlusAGauche() &&
+				sprt1.abscisseLaPlusADroite() <= sprt2.abscisseLaPlusADroite();
 		}
 
-	public static boolean abscisseAGaucheDeSprite1EstDansLesAbscissesSprite2(Sprite sprite1, Sprite sprite2) {
-		return sprite1.abscisseLaPlusAGauche() >= sprite2.abscisseLaPlusAGauche() &&
-			   sprite1.abscisseLaPlusAGauche() <= sprite2.abscisseLaPlusADroite();
+	public static boolean abscisseAGaucheDesprt1EstDansLesAbscissessprt2(Sprite sprt1, Sprite sprt2) {
+		return sprt1.abscisseLaPlusAGauche() >= sprt2.abscisseLaPlusAGauche() &&
+			   sprt1.abscisseLaPlusAGauche() <= sprt2.abscisseLaPlusADroite();
 	}
+
+	
 }
