@@ -1,10 +1,10 @@
 package model;
+import fr.unilim.iut.outils.*;
 import moteurJeu.DessinJeu;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
-import java.util.List;
 
 
 public class DessinSpaceInvaders implements DessinJeu {
@@ -20,20 +20,16 @@ public class DessinSpaceInvaders implements DessinJeu {
 			   Vaisseau vaisseau = this.jeu.recupererVaisseau();
 			   this.dessinerUnVaisseau(vaisseau, im);  
 			   
-		   if (this.jeu.aUnMissile()) {
-				List<Missile> missiles = this.jeu.recupererMissiles();
-				for (int i=0; i < missiles.size(); i++) {
-					if (missiles.get(i) != null) {
-						this.dessinerUnMissile(missiles.get(i), im);
-					}
-				}
-			}
+			   if (this.jeu.aUnMissile()) {
+				   Missile missile = this.jeu.recupererMissile();
+				   this.dessinerUnMissile(missile, im);  
+			   }
 			   
-		   if (this.jeu.aUnEnvahisseur()){
-			   Envahisseur envahisseur = this.jeu.recupererEnvahisseur();
-			   this.dessinerUnEnvahisseur(envahisseur, im);
+			   if (this.jeu.aUnEnvahisseur()){
+				   Envahisseur envahisseur = this.jeu.recupererEnvahisseur();
+				   this.dessinerUnEnvahisseur(envahisseur, im);
+			   }
 		   }
-	   }
 		   
 	   }
 
@@ -48,10 +44,8 @@ public class DessinSpaceInvaders implements DessinJeu {
 	   
 	   public void dessinerMissile (BufferedImage im) {
 		   if (this.jeu.aUnVaisseau()) {
-		   List<Missile> missiles = this.jeu.recupererMissiles();
-		   for (int i=0; i < missiles.size(); i++) {
-					this.dessinerUnMissile(missiles.get(i), im);
-			}
+			   Missile missile = this.jeu.recupererMissile();
+			   this.dessinerUnMissile(missile, im);
 		   }
 	   }
 	   
@@ -77,7 +71,6 @@ public class DessinSpaceInvaders implements DessinJeu {
 		   crayon.fillRect(missile.abscisseLaPlusAGauche(), missile.ordonneeLaPlusBasse(),missile.longueur(),missile.hauteur());
 
 	   }
-
 
 
 }

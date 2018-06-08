@@ -23,6 +23,4 @@ public interface Jeu {
 	 */
 	public boolean etreFini();
 
-	public void eliminerEnvahisseur();
-
 }

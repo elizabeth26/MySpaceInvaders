@@ -1,7 +1,5 @@
 package moteurJeu;
 
-import javax.swing.JOptionPane;
-
 import moteurJeu.Commande;
 import moteurJeu.Controleur;
 import moteurJeu.DessinJeu;
@@ -53,7 +51,7 @@ public class MoteurGraphique {
 		Controleur controle = this.gui.getControleur();
 
 		// boucle de jeu
-		while (!this.jeu.etreFini()) { 
+		while (!this.jeu.etreFini()) {
 			// demande controle utilisateur
 			Commande c = controle.getCommande();
 			// fait evoluer le jeu
@@ -65,9 +63,7 @@ public class MoteurGraphique {
 		}
 		
 		if(this.jeu.etreFini()){
-			JOptionPane.showMessageDialog(null, "Vous avez gagné !", "SpaceInvaders", JOptionPane.INFORMATION_MESSAGE);
-			jeu.eliminerEnvahisseur();
-			System.exit(0);
+			
 		}
 	}
 }

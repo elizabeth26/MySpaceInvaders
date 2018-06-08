@@ -5,7 +5,7 @@ package fr.unilim.iut.outils;
 public class DebordementEspaceJeuException extends RuntimeException {
 
 	 public DebordementEspaceJeuException(String message) {
-		   super(message); 
+		   super(message);
 	   }
     }
 

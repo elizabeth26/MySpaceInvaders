@@ -9,7 +9,7 @@ public class Collision {
 		}
 		return MissileEtEnvahisseurOntUnPointEnAbscisseEnCommun(sprt1, sprt2)
 				&& MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(sprt1, sprt2);
-	} 
+	}
 
 	public static boolean MissileEtEnvahisseurOntUnPointEnOrdonneeEnCommun(Sprite sprt1, Sprite sprt2) {
 		return ordonneeLaPlusBasseDesprt1EstDansOrdonneessprt2(sprt2, sprt1)
@@ -40,6 +40,4 @@ public class Collision {
 		return sprt1.abscisseLaPlusAGauche() >= sprt2.abscisseLaPlusAGauche() &&
 			   sprt1.abscisseLaPlusAGauche() <= sprt2.abscisseLaPlusADroite();
 	}
-
-	
 }
